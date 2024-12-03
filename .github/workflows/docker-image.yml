@@ -64,5 +64,5 @@ jobs:
     # Build and push image
     - name: Build and push image
       run: |
-        docker build -f Dockerfile.builder -t registry.cn-hangzhou.aliyuncs.com/yourui/hap.py:${{ env.tag }} .
+        docker build -f Dockerfile -t registry.cn-hangzhou.aliyuncs.com/yourui/hap.py:${{ env.tag }} .
         docker push registry.cn-hangzhou.aliyuncs.com/yourui/hap.py:${{ env.tag }}
